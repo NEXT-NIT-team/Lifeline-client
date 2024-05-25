@@ -58,7 +58,7 @@ const messages = [
 	},
 ];
 
-const ChatBot = () => {
+const ChatBot = ({navigation}) => {
 	const [message, setMessage] = useState([]);
 
 	return (
@@ -98,7 +98,7 @@ const ChatBot = () => {
 					</View>
 				))}
 			</ScrollView>
-			<TouchableOpacity>
+			<TouchableOpacity onPress={() => navigation.navigate("appointements")}>
 				<Text
 					style={{
 						textAlign: "center",

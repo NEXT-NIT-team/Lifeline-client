@@ -9,7 +9,7 @@ import colors from "../../theme/colors";
 const Appointement = () => {
 	return (
 		<BaseSafeAreaView>
-			<View style={{height: "45%", backgroundColor: colors.primary, justifyContent: "center", alignItems: "center", gap: 8, borderBottomEndRadius}}>
+			<View style={{height: "85%", backgroundColor: colors.primary, justifyContent: "center", alignItems: "center", gap: 8, borderBottomEndRadius: 15, borderBottomStartRadius: 15}}>
 				<Text style={{color: "white", fontSize: 25, fontWeight: "600", textAlign: "center"}}>Thank you</Text>
 				<Text style={{color: "white", fontSize: 16, fontWeight: "400", textAlign: "center"}}>
 					Your visit has been successfully reserved, please pay for it to get an
@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
 		padding: 12,
 		backgroundColor: colors.background,
 		borderRadius: 14,
-    marginBottom: 8
+    marginBottom: 8, 
+    height: "15%"
 	},
 	doctorInfo: {
 		flexDirection: "row",
